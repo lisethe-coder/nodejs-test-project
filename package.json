@@ -1,6 +1,6 @@
 {
   "name": "node-recap-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Attempting to create a node server with some endpoints from sratch for my next job hunt :)",
   "main": "server.js",
   "scripts": {
