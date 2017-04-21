@@ -14,7 +14,7 @@ const server =  new Hapi.Server()
 
 server.connection({
 	port: process.env.SERVER_PORT,
-	host: '192.168.1.132',
+	host: process.env.MAC_IP_ADDRESS,
 	routes: {
 		cors: true,
 	}
@@ -70,6 +70,9 @@ server.route({
 				email: Joi.string(),
 			})
 		}
+	},
+	handler: function (request, reply) {
+		reply('success!');
 	}
 })
 
